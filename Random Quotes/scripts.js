@@ -24,7 +24,7 @@ const quotes = [
 const output = document.getElementById("output")
 const myset = new Set();
 function genquote(){
-    if (myset.size >= quotes.length){
+    if (myset.size == quotes.length){
         myset.clear()
     }
     while (true){
