@@ -10,7 +10,10 @@ function palindrome(){
     value = input.value
     back = reverse(value)
     input.value = ""
-    if (back === value){
+    if(value === ""){
+        output.innerHTML = "TYPE SOMETHING YOU FOOL"
+    }
+    else if (back === value){
         output.innerHTML = "PALINDROME"
     }
     else{

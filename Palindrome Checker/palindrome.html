@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+    <style>
+        body{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            height: 90vh;
+        }
+        .container{
+            text-align: center;
+            background-color: yellow;
+            border-radius: 25px;
+            padding: 100px;
+        }
+        button{
+            margin: 10px;
+            border-radius: 50px;
+            height: 35px;
+            width: 65px;
+            border: 0;
+        }
+        button:active{
+            background-color: rgb(176, 174, 174);
+        }
+        #input{
+            border-radius: 10px;
+            height: 25px;
+            border: 0;
+            padding: 5px;
+        }
+        p{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+    <h1>Palindrome Checker</h1>
+    <input type="text" id="input" placeholder="Input"/>
+    <button onclick="palindrome()">Check</button> 
+    <p id="output"></p>
+    </div>
+    <script src="scripts.js"></script>
+    
+</body>
+</html>
