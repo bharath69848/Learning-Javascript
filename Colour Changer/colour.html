@@ -6,30 +6,53 @@
     <title>Colour Changer</title>
     <style>
         #Green{
-            background-color: green;
+            background-color: #43cea2;
         }
         #Red{
-            background-color: red;
+            background-color: #f85032;
         }
         #Blue{
-            background-color: blue;
+            background-color: #36d1dc;
         }
         Button{
             border-radius: 5px;
             width: 100px;
             height: 50px;
             margin: 4px;
+            font-weight: bold;
+        }
+        button:active{
+            background-color: gray;
+        }
+        body{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #9770f3;
+        }
+        .container{
+            text-align: center;
+            background-color: #9d7ee6;
+            border-radius: 40px;
+            padding: 50px;
+        }
+        h1{
+            color: #333;
         }
     
     </style>
 </head>
 <body>
+    <div class="container">
     <h1>Colour Changer</h1>
+    <br>
     <button id="Green" onclick="colorchanger('green')">Green</button>
     <button id="Red" onclick="colorchanger('red')">Red</button>
     <button id="Blue" onclick="colorchanger('blue')">Blue</button>
     <button onclick="random()">Random</button>
-
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
